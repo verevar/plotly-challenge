@@ -1,5 +1,5 @@
 var jsData;
-
+console.log("Hello world")
 function init(){
 
     var selector = d3.select("#selDataset");
