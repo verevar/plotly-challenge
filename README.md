@@ -1,4 +1,5 @@
 # Plot.ly Homework - Belly Button Biodiversity
+http://127.0.0.1:5500/StarterCode/index.html
 
 ![Bacteria by filterforge.com](Images/bacteria.jpg)
 
