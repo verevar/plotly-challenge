@@ -38,17 +38,18 @@ function init(){
         marker: {
         size: sample_values,
         color: otu_ids,
-        colorscale:"Portland"
+        colorscale:"Greens"
         }
     };
   
     var data = [trace1];
+
     var layout = {
         title: 'Bacteria Cultures per Sample',
         showlegend: false,
         hovermode: 'closest',
         xaxis: {title:"OTU (Operational Taxonomic Unit) ID " +sample},
-        font: { color: "darkblue", family: "Arial, Helvetica, sans-serif" },
+        font: { color: "green", family: "Times New Roman" },
         margin: {t:30}
     };
     Plotly.newPlot('bubble', data, layout); 
@@ -65,7 +66,7 @@ function init(){
     var layout = {
         title: "Top Ten OTUs for Individual " +sample,
         margin: {l: 100, r: 100, t: 100, b: 100},
-        font: { color: "darkblue", family: "Arial, Helvetica, sans-serif" }
+        font: { color: "green", family: "Times New Roman" }
     };
     Plotly.newPlot("bar", data, layout);  
     });
@@ -85,21 +86,21 @@ function init(){
     var data = [
       {
         domain: { x: [0, 1], y: [0, 1] },
-        marker: {size: 28, color:'85000'},
+        marker: {size: 28, color:"#4DE30"},
         value: result.wfreq,
         title: 'Belly Button Washing Frequency<br> Scrubs per Week',
-        titlefont: {family: '"Arial, Helvetica, sans-serif'},
+        titlefont: {family: '"Times New Roman'},
         type: "indicator",
         mode: "number+gauge",
         gauge: { 
           axis: { visible: true, range: [0, 10]},
-          bar: { color: 'mediumpurple'},
+          bar: { color: 'black'},
           steps: [
-            { range: [0, 2], color: "#c94c4c" },
-            { range: [2, 4], color: "#f2ae72" },
-            { range: [4, 6], color: "#ffef96" },
-            { range: [6, 8], color: "#b1cbbb" },
-            { range: [8, 10], color: "#A0DAA9" }
+            { range: [0, 2], color: "#B7FFBF" },
+            { range: [2, 4], color: "#95F985" },
+            { range: [4, 6], color: "#4DED30" },
+            { range: [6, 8], color: "#00C301" },
+            { range: [8, 10], color: "#00AB08" }
           ]},
       }
     ];
@@ -109,9 +110,9 @@ function init(){
        height: 450,
        margin: { t: 100, r: 100, l: 100, b: 100 },
        line: {
-       color: 'darkblue'
+       color: "#4DED30"
        },
-       font: { color: "darkblue", family: "Arial, Helvetica, sans-serif" }
+       font: { color: "green", family: "Times New Roman" }
      };
   
     
